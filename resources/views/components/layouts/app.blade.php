@@ -24,7 +24,7 @@
             <input
                 type="search"
                 class="w-full rounded bg-white/20 px-3 py-1 text-base text-sm placeholder:text-white"
-                placeholder="Search Laravel"
+                placeholder="Search Reverb"
             />
         </div>
 
@@ -73,7 +73,7 @@
                     />
 
                     <span class="absolute -bottom-1 -right-1">
-                        <span class="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-fuchsia-600">
+                        <span class="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-lime-600">
                             <span class="flex h-2 w-2 rounded-full border bg-green-600 border-green-600"></span>
                         </span>
                     </span>

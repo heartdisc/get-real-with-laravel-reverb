@@ -2,7 +2,7 @@
     <template x-for="user in users">
         <li>
             <span
-                class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-fuchsia-900 hover:text-white"
+                class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-lime-900 hover:text-white"
             >
                 <span class="relative">
                     <img

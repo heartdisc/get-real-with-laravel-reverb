@@ -12,10 +12,10 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Lato', ...defaultTheme.fontFamily.sans],
+                sans: ['Sarabun', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                sidebar: '#dac3db',
+                sidebar: '#ecfccb',
             }
         },
     },
