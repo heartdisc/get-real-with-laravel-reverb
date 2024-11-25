@@ -22,8 +22,8 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
 ?>
 
 <div
-    class="flex w-full rounded-lg bg-fuchsia-800"
-    style="height: calc(100vh - 40px)"
+    class="flex w-full rounded-lg bg-lime-800"
+    style="height: calc(100vh - 50px)"
 >
     <!-- Channels -->
     <div class="shrink-0 overflow-y-scroll rounded-l-lg bg-sidebar">
@@ -67,13 +67,13 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
                             <x-icons.plus
                                 x-show="!openChannelForm"
                                 class="h-5 w-5 text-gray-700"
-                                @click="openChannelForm = !openChannelForm" 
+                                @click="openChannelForm = !openChannelForm"
                             />
 
                             <x-icons.minus
                                 x-show="openChannelForm"
                                 class="h-5 w-5 text-gray-700"
-                                @click="openChannelForm = !openChannelForm" 
+                                @click="openChannelForm = !openChannelForm"
                             />
                         </button>
                     </div>
@@ -86,7 +86,7 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
                         placeholder="general"
                         @keyup.enter="openChannelForm = false; $wire.createChannel($event.target.value)"
                     />
-                </li>   
+                </li>
 
                 <li>
                     <ul x-cloak x-show="open">
@@ -94,8 +94,8 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
                             <li>
                                 <a
                                     :href="`/${channel.name}`"
-                                    class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-fuchsia-900 hover:text-white"
-                                    :class="{ 'bg-fuchsia-900 text-white': channel.name === '{{ $channel->name }}' }"
+                                    class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-sky-200 hover:text-black"
+                                    :class="{ 'bg-sky-200 text-black': channel.name === '{{ $channel->name }}' }"
                                 >
                                     <x-icons.hashtag
                                         class="text:inherit h-4 w-4"

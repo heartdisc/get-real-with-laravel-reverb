@@ -15,7 +15,7 @@ export default {
                 sans: ['Lato', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                sidebar: '#dac3db',
+                sidebar: '#f1f5f9',
             }
         },
     },
