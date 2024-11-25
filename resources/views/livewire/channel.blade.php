@@ -102,6 +102,7 @@ Alpine.data('channel', () => {
 
         init() {
             this.scrollPosition()
+            this.channel = Echo.channel('channel.{{ $channel->id }}')
         },
 
         send(message) {
