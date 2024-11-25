@@ -39,7 +39,7 @@
 
     <body class="h-screen w-screen antialiased">
         <div
-            class="flex h-full w-full flex-col items-center justify-center bg-gradient-to-tr from-lime-600 from-10% to-lime-900 p-1"
+            class="flex h-full w-full flex-col items-center justify-center bg-gradient-to-tr from-slate-200 from-10% to-slate-300 p-1"
         >
             @yield("content")
         </div>

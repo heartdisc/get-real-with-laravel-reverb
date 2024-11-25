@@ -15,15 +15,15 @@
 
         <!-- Controls -->
         <div class="flex w-1/2 items-center gap-x-2">
-            <x-icons.back class="w-5 h-5 text-white/20" />
+            <x-icons.back class="w-5 h-5 text-black/40" />
 
-            <x-icons.forward class="w-5 h-5 text-white/20" />
+            <x-icons.forward class="w-5 h-5 text-black/40" />
 
-            <x-icons.clock class="h-5 w-5 text-white" />
+            <x-icons.clock class="h-5 w-5 text-black/40" />
 
             <input
                 type="search"
-                class="w-full rounded bg-white/20 px-3 py-1 text-base text-sm placeholder:text-white"
+                class="w-full rounded bg-white/40 border-white/20 focus:bg-white focus:outline-none focus:border-sky-500 focus:ring-0 focus:ring-sky-500 px-3 py-1 text-sm placeholder:text-black"
                 placeholder="Search Reverb"
             />
         </div>
@@ -33,14 +33,14 @@
             @method("DELETE")
             @csrf
             <button type="submit">
-                <x-icons.question class="h-5 w-5 text-white" />
+                <x-icons.question class="h-5 w-5 text-black/20" />
             </button>
         </form>
     </div>
 
     <div class="flex w-full">
         <!-- Sidebar -->
-        <div class="flex flex-col justify-between py-2 pl-3.5 pr-5">
+        <div class="flex flex-col justify-between py-2 pl-2.5 pr-3.5">
             <ul class="flex flex-col gap-y-4">
                 <li>
                     <img
@@ -51,7 +51,7 @@
                 </li>
 
                 <li
-                    class="flex h-10 w-10 items-center justify-center rounded-md bg-white/20 text-white"
+                    class="flex h-10 w-10 items-center justify-center rounded-md bg-slate-100 text-slate-800"
                 >
                     <x-icons.home class="h-6 w-6" />
                 </li>

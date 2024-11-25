@@ -15,7 +15,7 @@ export default {
                 sans: ['Sarabun', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                sidebar: '#ecfccb',
+                sidebar: '#f1f5f9',
             }
         },
     },

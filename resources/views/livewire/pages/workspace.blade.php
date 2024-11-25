@@ -23,7 +23,7 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
 
 <div
     class="flex w-full rounded-lg bg-lime-800"
-    style="height: calc(100vh - 40px)"
+    style="height: calc(100vh - 50px)"
 >
     <!-- Channels -->
     <div class="shrink-0 overflow-y-scroll rounded-l-lg bg-sidebar">
@@ -94,8 +94,8 @@ $createChannel = fn (string $name) => Channel::create(['name' => $name]);
                             <li>
                                 <a
                                     :href="`/${channel.name}`"
-                                    class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-lime-900 hover:text-white"
-                                    :class="{ 'bg-lime-900 text-white': channel.name === '{{ $channel->name }}' }"
+                                    class="flex items-center gap-x-2 rounded-md px-4 py-1 hover:bg-sky-200 hover:text-black"
+                                    :class="{ 'bg-sky-200 text-black': channel.name === '{{ $channel->name }}' }"
                                 >
                                     <x-icons.hashtag
                                         class="text:inherit h-4 w-4"
